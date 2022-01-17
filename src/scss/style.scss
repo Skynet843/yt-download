@@ -1,0 +1,96 @@
+@import "mixins";
+@import "globals";
+@import "variables";
+@import "navbar";
+@import "songCard";
+@import "LandscapeCard";
+
+.links{
+    // border: $Basic_border;
+    // display: none;
+    // bottom: 0;
+    // opacity: 0;
+    // top: 0;
+    // width: 100px;
+    width: max-content;
+    a{
+        color: white;
+        @include breakpoint-down(small){
+            font-size: smaller;
+            padding: 5px 2px;
+        }
+        font-size: medium;
+        font-weight: 500;
+        background: blue;
+        border: 0.5px solid white;
+        width: 100%;
+        padding: 10px 2px;
+        // padding: 0 0.5rem;
+        &:hover{
+            // color: #858080;
+            background: rgb(26, 26, 187);
+        }
+    }
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+
+    &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-color: black;
+    }
+    background-color: black;
+
+    .App{
+        @include breakpoint-down(medium){
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        margin-left: 8.125rem;
+        margin-right: 8.125rem;
+
+        #videos{
+            @include breakpoint-down(small){
+                margin-top: 1rem;
+            }
+
+
+            margin-top: 3rem;
+            // border: $Basic_border;
+            // width: 95vw;
+            >div{
+
+                @include breakpoint-down(medium){
+                    margin-bottom: 10px;
+                }
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    #footer{
+        width: 100%;
+        margin-top: 3rem;
+        // bottom: 0;
+        padding: 2rem 0;
+        color: white;
+        background: rgba(255, 236, 236, 0.23);
+        p{
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.navActive{
+    color: white;
+}
+.navDeActive{
+    color: #858080;
+}
