@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yt-download/static/css/main.a37b70a3.css",
+    "main.js": "/yt-download/static/js/main.1b37d17b.js",
+    "index.html": "/yt-download/index.html",
+    "static/media/arrow-left-solid.svg": "/yt-download/static/media/arrow-left-solid.3547ba8fcd9ecba06b51.svg",
+    "static/media/play-circle-solid.svg": "/yt-download/static/media/play-circle-solid.58b4633ed5640a019772.svg",
+    "main.a37b70a3.css.map": "/yt-download/static/css/main.a37b70a3.css.map",
+    "main.1b37d17b.js.map": "/yt-download/static/js/main.1b37d17b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a37b70a3.css",
+    "static/js/main.1b37d17b.js"
+  ]
+}
